@@ -7,7 +7,7 @@ User Page: A friendly interface for easily searching and shopping for women's fa
 Admin Page: Designed for administrators to manage products, add, edit, or delete items, and track orders.
 
 
-![image](https://github.com/user-attachments/assets/37c94fdb-380e-40a8-ab8e-bfc11857d58f)
+<img src="https://github.com/user-attachments/assets/37c94fdb-380e-40a8-ab8e-bfc11857d58f" width="50%" alt="Clothing Store Screenshot">
 
 
 🌟 Key Features
@@ -17,8 +17,8 @@ Product Search and Filter: Users can easily search for dresses and clothing by c
 Product Management: Admin dashboard allows quick addition, editing, and deletion of products.  
 Cross-Platform Support: Runs smoothly on both desktop and mobile devices.
 
-![image](https://github.com/user-attachments/assets/79056392-6fbe-4332-8df7-4691a455b47a)
-![image](https://github.com/user-attachments/assets/fb26362c-fa60-48c9-b6fa-89ec01f8f92e)
+<img src="https://github.com/user-attachments/assets/79056392-6fbe-4332-8df7-4691a455b47a" width="50%" alt="Clothing Store Screenshot 1">
+<img src="https://github.com/user-attachments/assets/fb26362c-fa60-48c9-b6fa-89ec01f8f92e" width="50%" alt="Clothing Store Screenshot 2">
 
 🛠️ Technologies Used
 
@@ -67,9 +67,9 @@ Launch the Website: Access http://localhost:3000 to view the website.
 
 
 📸 Interface Preview
-![image](https://github.com/user-attachments/assets/6b543ddf-6fa8-446f-a748-f0d0b96f5206)
 
-![image](https://github.com/user-attachments/assets/340155ce-05a6-4c95-8e45-5ef35417f0ea)
+<img src="https://github.com/user-attachments/assets/6b543ddf-6fa8-446f-a748-f0d0b96f5206" width="50%" alt="Clothing Store Screenshot 1">
+<img src="https://github.com/user-attachments/assets/340155ce-05a6-4c95-8e45-5ef35417f0ea" width="50%" alt="Clothing Store Screenshot 2">
 
 🤝 Contributing
 We welcome all contributions to improve the project! To contribute:  
