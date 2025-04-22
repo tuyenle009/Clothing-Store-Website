@@ -1,0 +1,175 @@
+#login-body {
+    font-family: Quicksand, sans-serif;
+    margin: 0 auto;
+    padding: 0;
+    background-color:  #F6F3E4 ;
+    /* #F6F3E4 */
+}
+
+#login-header {
+    background-color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+}
+
+#login-logo-header {
+    display: flex;
+    align-items: center;
+}
+
+#login-logo-header img {
+    height: 30px;
+    margin-right: 10px;
+}
+
+#login-help a {
+    color: black;
+    text-decoration: none;
+}
+
+#login-main {
+    margin: 10px 0px;
+}
+
+#login-logo-container {
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+
+#login-logo-container img {
+    height: 100px;
+}
+
+#login-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 400px;
+    margin: 0px auto;
+    margin-top: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    margin-bottom: 100px;
+}
+
+#login-container h2 {
+    margin: 0 0 20px;
+    font-size: 24px;
+}
+
+.login-form-group {
+    margin-bottom: 15px;
+}
+
+.login-form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.login-form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.login-btn {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.login-forgot-password {
+    display: block;
+    margin-top: 10px;
+    color: black;
+    text-decoration: none;
+}
+
+.login-social-login {
+    margin: 20px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.login-social-login a {
+    display: inline-block;
+    width: 48%;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.login-social-login a.facebook {
+    background-color: #3b5998;
+    color: white;
+}
+
+.login-social-login a.google {
+    background-color: #dd4b39;
+    color: white;
+}
+
+.login-register {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.login-register a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#login-footer {
+    text-align: center;
+    padding: 10px 20px;
+    font-size: 12px;
+    color: #666;
+    background-color: #f1f1f1;
+}
+#login-footer p {
+    margin: 5px 0;
+}
+
+.password-input-container {
+    position: relative;
+    width: 100%;
+
+    input {
+        width: 100%;
+        padding-right: 40px; // Tạo khoảng trống cho icon
+    }
+
+    .password-toggle {
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        cursor: pointer;
+        padding: 5px;
+        user-select: none;
+        font-size: 1.2em;
+        
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+}

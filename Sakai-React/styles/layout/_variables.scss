@@ -1,0 +1,55 @@
+/* General */
+$borderRadius:12px;             /* border radius of layout element e.g. card, sidebar */ 
+$transitionDuration:.2s;        /* transition duration of layout elements e.g. sidebar, overlay menus */ 
+
+// Override PrimeReact default colors
+:root {
+    --font-family: 'Quicksand', sans-serif;
+    --primary-color: #000000;
+    --primary-color-text: #ffffff;
+    --primary-dark-color: #000000;
+    --primary-light-color: #333333;
+    
+    // Button states
+    --primary-hover-bg: #333333;
+    --primary-hover-border: #333333;
+    --primary-active-bg: #000000;
+    --primary-active-border: #000000;
+    
+    // Outlined button
+    --primary-button-outline-color: #000000;
+    --primary-button-outline-hover-bg: rgba(0, 0, 0, 0.1);
+    --primary-button-outline-hover-border: #000000;
+    
+    // Text button
+    --primary-button-text-color: #000000;
+    --primary-button-text-hover-bg: rgba(0, 0, 0, 0.1);
+    
+    // Focus ring
+    --focus-ring: 0 0 0 2px #ffffff, 0 0 0 4px rgba(0, 0, 0, 0.3);
+}
+
+// Custom theme variables
+$primaryColor: #000000;
+$primaryLightColor: #333333;
+$primaryDarkColor: #000000;
+$primaryDarkerColor: #000000;
+$primaryTextColor: #ffffff;
+
+$primaryButtonBg: $primaryColor;
+$primaryButtonTextColor: $primaryTextColor;
+$primaryButtonBorder: $primaryColor;
+$primaryButtonHoverBg: $primaryLightColor;
+$primaryButtonHoverTextColor: $primaryTextColor;
+$primaryButtonHoverBorder: $primaryLightColor;
+$primaryButtonActiveBg: $primaryDarkerColor;
+$primaryButtonActiveTextColor: $primaryTextColor;
+$primaryButtonActiveBorder: $primaryDarkerColor;
+
+$primaryOutlinedButtonTextColor: $primaryColor;
+$primaryOutlinedButtonBorder: $primaryColor;
+$primaryOutlinedButtonHoverBg: rgba($primaryColor, 0.1);
+$primaryOutlinedButtonHoverBorder: $primaryColor;
+
+$primaryTextButtonTextColor: $primaryColor;
+$primaryTextButtonHoverBg: rgba($primaryColor, 0.1);

@@ -1,0 +1,314 @@
+/* MAIN */
+#product-main{
+    padding-top: 0px;
+}
+#product-banner img {
+    width: 100%;
+    height: auto;
+}
+
+#product-main #product-content {
+    display: flex;
+    padding: 20px;
+    background-color: #F6F3E4;
+    gap: 15px;
+}
+/* ASIDE */
+#product-aside {
+    width: 200px;
+    flex-shrink: 0;
+    padding: 15px;
+}
+
+#product-aside #category h3 {
+    margin-top: 0;
+    padding-bottom: 5px;
+    border-bottom: 1px solid rgb(227, 221, 187);
+}
+
+#product-aside #category ul {
+    list-style: none;
+    padding: 0;
+}
+
+#product-aside #category ul li {
+    margin: 10px 0;
+}
+
+/* Dropdown menu */
+.dropdown-menu {
+    display: none; /* Ẩn danh sách con mặc định */
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0 20px; /* Thêm khoảng cách để dễ nhìn hơn */
+    transition: all 0.3s ease;
+
+    &.expanded {
+        display: block;
+    }
+
+    li {
+        padding: 5px 0;
+        font-size: 0.9em;
+        color: #666;
+        
+        &:hover {
+            color: #000;
+            cursor: pointer;
+        }
+    }
+}
+
+/* Plus for item */
+.product-item-parent {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 5px 0;
+    border-bottom: 1px solid rgb(227, 221, 187);
+
+    .toggle-icon {
+        cursor: pointer;
+        font-size: 18px;
+        width: 20px;
+        height: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: transform 0.3s ease;
+        
+        &.expanded {
+            transform: rotate(180deg);
+        }
+    }
+}
+
+.menu-link:hover, .dropdown-menu li:hover,.product-name:hover{
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.menu-link {
+    text-decoration: none; /* Bỏ dấu gạch chân */
+    color: black; /* Chuyển màu chữ thành màu đen */
+}
+
+/* SECTION */
+#product-section {
+    flex: 1;
+    padding: 15px;
+
+    .section-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+        border-bottom: 1px solid rgb(227, 221, 187);
+        padding-bottom: 5px;
+
+        h3 {
+            margin: 0;
+            padding: 0;
+            border-bottom: none;
+        }
+
+        .sort-dropdown {
+            select {
+                padding: 8px 12px;
+                border: 1px solid #ddd;
+                border-radius: 4px;
+                background-color: white;
+                cursor: pointer;
+                font-size: 14px;
+                min-width: 150px;
+
+                &:hover {
+                    border-color: #bbb;
+                }
+
+                &:focus {
+                    outline: none;
+                    border-color: #999;
+                }
+            }
+        }
+    }
+}
+
+#product-section h3 {
+    margin-top: 0;
+    padding-bottom:5px ;
+    border-bottom: 1px solid rgb(227, 221, 187);
+}
+
+/* Loading and Error States */
+.loading {
+    text-align: center;
+    padding: 20px;
+    font-size: 1.2em;
+    color: #666;
+}
+
+.error {
+    text-align: center;
+    padding: 20px;
+    color: #dc3545;
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+    border-radius: 4px;
+    margin: 10px 0;
+}
+
+/* Products Grid */
+.products {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    width: 100%;
+}
+
+.product {
+    text-align: left;
+    padding: 5px;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    aspect-ratio: 2/3;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    margin-bottom: 2px;
+    
+    &:hover {
+        transform: translateY(-3px);
+    }
+
+    img {
+        width: 100%;
+        height: 75%;
+        object-fit: cover;
+        border-radius: 4px;
+        transition: transform 0.3s ease;
+        background-color: #f8f8f8;
+        
+        &:hover {
+            transform: scale(1.03);
+        }
+    }
+}
+
+.price {
+    font-weight: bold;
+    color: #e44d26;
+    margin: 8px 0;
+    font-size: 1em;
+}
+
+.product-name {
+    margin: 4px 0 12px 0;
+    line-height: 1.3;
+    color: #333;
+    font-size: 1.1em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    // -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    height: 2.6em;
+}
+
+/* Pagination */
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    gap: 10px;
+
+    button {
+        padding: 8px 16px;
+        border: 1px solid #ddd;
+        background: white;
+        cursor: pointer;
+        border-radius: 4px;
+        transition: all 0.2s;
+
+        &:hover:not(:disabled) {
+            background: #f0f0f0;
+        }
+
+        &:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+
+        &.active {
+            background: #007bff;
+            color: white;
+            border-color: #0056b3;
+        }
+    }
+}
+
+/* Responsive Grid */
+@media only screen and (max-width: 768px) {
+    #product-aside {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    
+    #product-section {
+        width: 100%;
+    }
+    
+    .products {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .products {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+}
+
+/* Tablet */
+@media only screen and (min-width: 768px) {
+    .col-m-1{width: 8.33%;}
+    .col-m-2{width: 16.66%;}
+    .col-m-3{width: 25%;}
+    .col-m-4{width: 33.33%;}
+    .col-m-5{width: 41.66%;}
+    .col-m-6{width: 50%;}
+    .col-m-7{width: 58.33%;}
+    .col-m-8{width: 66.66%;}
+    .col-m-9{width: 75%;}
+    .col-m-10{width: 83.33%;}
+    .col-m-11{width: 91.66%;}
+    .col-m-12{width: 100%;}
+    
+    .tablet {
+        display: none;
+    }
+}
+
+/* Desktop */
+@media only screen and (min-width: 1024px) {
+    .col-1{width: 8.33%;}
+    .col-2{width: 16.66%;}
+    .col-3{width: 25%;}
+    .col-4{width: 33.33%; margin-bottom: 20px;}
+    .col-5{width: 41.66%;}
+    .col-6{width: 50%;}
+    .col-7{width: 58.33%;}
+    .col-8{width: 66.66%;}
+    .col-9{width: 75%;}
+    .col-10{width: 83.33%;}
+    .col-11{width: 91.66%;}
+    .col-12{width: 100%;}
+    
+    .tablet {
+        display: block;
+    }
+}

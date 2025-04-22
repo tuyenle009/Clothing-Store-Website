@@ -1,0 +1,69 @@
+.purchase-order {
+    font-family: 'Quicksand', sans-serif;
+
+    .order-card {
+        transition: transform 0.2s;
+        &:hover {
+            transform: translateY(-2px);
+        }
+    }
+
+    .order-status {
+        &.pending {
+            background-color: #fff3e0;
+            color: #ff9800;
+        }
+        &.processing {
+            background-color: #e3f2fd;
+            color: #2196f3;
+        }
+        &.shipped {
+            background-color: #e8f5e9;
+            color: #4caf50;
+        }
+        &.delivered {
+            background-color: #e8f5e9;
+            color: #4caf50;
+        }
+        &.cancelled {
+            background-color: #fbe9e7;
+            color: #f44336;
+        }
+    }
+
+    .order-details {
+        .product-image {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 4px;
+        }
+
+        .product-info {
+            flex: 1;
+        }
+
+        .price-info {
+            text-align: right;
+            min-width: 120px;
+        }
+    }
+
+    .payment-info {
+        background-color: #f5f5f5;
+        border-radius: 4px;
+        padding: 1rem;
+
+        .payment-status {
+            &.success {
+                color: #4caf50;
+            }
+            &.pending {
+                color: #ff9800;
+            }
+            &.failed {
+                color: #f44336;
+            }
+        }
+    }
+}

@@ -1,0 +1,197 @@
+.homepage-container {
+    /* banner */
+    #bannerHome {
+        position: relative;
+        width: 100%;
+
+        img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .homepage-nav-button {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            padding: 10px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            cursor: pointer;
+        }
+
+        #prevButton {
+            left: 10px;
+        }
+
+        #nextButton {
+            right: 10px;
+        }
+    }
+
+    /* content */
+    #content {
+        padding: 20px;
+    }
+
+    #new-arrival {
+        text-align: center;
+        border-top: 1px solid rgb(227, 221, 187);
+
+        h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+    }
+
+    .homepage-products {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 15px;
+        padding: 0 15px;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .homepage-product {
+        background: #F6F3E4;
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        padding: 0;
+        border-radius: 6px;
+        transition: all 0.3s ease;
+        overflow: hidden;
+        
+        &:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+        }
+
+        img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 6px;
+            margin: 0;
+            display: block;
+        }
+
+        .price {
+            margin: 8px 0;
+            font-size: 1em;
+            color: #e74c3c;
+            font-weight: bold;
+        }
+
+        .homepage-description {
+            margin: 0 0 8px 0;
+        }
+    }
+
+    /* button */
+    .homepage-load-more {
+        display: block;
+        margin: 20px auto;
+        padding: 10px 50px;
+        background-color: #F6F3E4;
+        border: 2px solid black;
+        cursor: pointer;
+
+        a {
+            text-decoration: none;
+            color: black;
+            font-size: 20px;
+            font-weight: bold;
+        }
+    }
+
+    .load-more {
+        display: inline-block;
+        background-color: #F6F3E4;
+        color: #000;
+        padding: 12px 30px;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: 500;
+        letter-spacing: 1px;
+        transition: all 0.3s ease;
+        margin: 35px 0 10px 0;
+        border: 2px solid #000;
+
+        &:hover {
+            background-color: #efebd7;
+        }
+    }
+
+    /* INSTAGRAM */
+    #instagram {
+        border-top: 1px solid rgb(227, 221, 187);
+        text-align: center;
+        margin-top: 40px;
+        font-size: 24px;
+
+        h2 {
+            margin-bottom: 0px;
+        }
+
+        p {
+            margin-top: 5px;
+        }
+    }
+
+    #instagram-gallery {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
+        padding: 0 15px;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .sub-insta {
+        width: 100%;
+        aspect-ratio: 1;
+        object-fit: cover;
+        border-radius: 4px;
+        transition: transform 0.3s ease;
+        padding: 0;
+        margin: 0;
+        display: block;
+        
+        &:hover {
+            transform: scale(1.03);
+        }
+    }
+
+    /* Responsive */
+    @media only screen and (max-width: 1024px) {
+        .homepage-products {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+
+    @media only screen and (max-width: 768px) {
+        .homepage-products {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        
+        #instagram-gallery {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    @media only screen and (max-width: 480px) {
+        .homepage-products {
+            grid-template-columns: 1fr;
+        }
+        
+        #instagram-gallery {
+            grid-template-columns: 1fr;
+        }
+    }
+}
+
+

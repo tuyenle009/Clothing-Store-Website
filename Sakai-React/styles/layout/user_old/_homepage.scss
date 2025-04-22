@@ -1,0 +1,56 @@
+#bannerHome {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+
+    #bannerImage {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: opacity 0.5s ease-in-out;
+    }
+
+    .homepage-nav-button {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background: rgba(255, 255, 255, 0.5);
+        border: none;
+        padding: 15px;
+        cursor: pointer;
+        font-size: 18px;
+        transition: background-color 0.3s;
+        z-index: 2;
+
+        &:hover {
+            background: rgba(255, 255, 255, 0.8);
+        }
+    }
+
+    #prevButton {
+        left: 10px;
+    }
+
+    #nextButton {
+        right: 10px;
+    }
+ 
+}
+.load-more {
+    display: inline-block;
+    background-color: #000;
+    color: #fff;
+    padding: 12px 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    margin: 20px 0;
+
+    &:hover {
+        background-color: #333;
+    }
+}
+

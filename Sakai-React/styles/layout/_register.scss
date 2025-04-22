@@ -1,0 +1,148 @@
+#register-body {
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+    background-color: #F6F3E4;
+
+}
+
+#register-header {
+    background-color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+}
+
+#register-logo-header img {
+    height: 30px;
+}
+
+#register-help a {
+    color: black;
+    text-decoration: none;
+    
+}
+
+#register-logo-container {
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    
+}
+#register-logo-container img {
+    height: 100px;
+}
+
+#regis-container {
+    background-color: white;
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#regis-container h2 {
+    margin-bottom: 10px;
+    font-size: 24px;
+    margin-top: 0px;
+}
+
+#regis-container p {
+    margin-bottom: 20px;
+    color: #666;
+}
+
+.register-form-group {
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.register-form-group input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    flex: 1;
+}
+
+
+
+.register-form-group select {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #f5e6e6;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.register-form-group .dob {
+    display: flex;
+    justify-content: space-between;
+}
+
+.register-form-group .dob select {
+    flex: 1;
+}
+.register-form-group label{
+    flex: 1;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+.register-form-group .gender {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.register-form-group .gender label {
+    display: flex;
+    align-items: center;
+}
+
+
+.register-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.register-btn:hover {
+    background-color: #45a049;
+}
+
+.register-info, .register-policy {
+    font-size: 12px;
+    color: #666;
+}
+
+.register-info a, .register-policy a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.register-info a:hover, .register-policy a:hover {
+    text-decoration: underline;
+}
+
+#register-footer {
+    text-align: center;
+    padding: 10px 20px;
+    font-size: 12px;
+    color: #666;
+    background-color: #f1f1f1;
+}
+
+#register-footer p {
+    margin: 5px 0;
+}
